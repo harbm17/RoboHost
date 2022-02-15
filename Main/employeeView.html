@@ -20,16 +20,17 @@
             }
 
             .rectangle{
-                /* Tables and Colors */
+
 
                 position: absolute;
                 width: 1200px;
                 height: 600px;
                 left: 120px;
                 top: 110px;
-                background-color: gray;
-                border: 10px;
-                border-color: black;
+
+                background: #DDDDDD;
+                border: 1.5px solid #000000;
+                box-sizing: border-box;
 
             }
 
@@ -41,18 +42,98 @@
                 position: absolute;
                 width: 130px;
                 height: 30px;
-                left: 45px;
-                top: 45px;
-
+                padding: 25px;
+                cursor: pointer;
             }
 
+
+            .TablesQueue
+            {
+                width: 176px;
+                height: 94px;
+                padding: 35px;
+                background: #5FAAF0;
+                border: 1px solid #000000;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 25px;
+                text-align: center;
+                margin: 10px 15px;
+                float: left;
+            }
+
+            .TablesBusy
+            {
+                width: 176px;
+                height: 94px;
+                padding: 35px;
+                background: #F16464;
+                border: 1px solid #000000;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 25px;
+                text-align: center;
+                margin: 10px 15px;
+                float: left;
+            }
+
+            .TablesInUse
+            {
+                width: 176px;
+                height: 94px;
+                padding: 35px;
+                background: #C4C4C4;
+                border: 1px solid #000000;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 25px;
+                text-align: center;
+                margin: 10px 15px;
+                float: left;
+            }
+
+            .TablesReady
+            {
+                width: 176px;
+                height: 94px;
+                padding: 35px;
+                background: #9FE15C;
+                border: 1px solid #000000;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 25px;
+                text-align: center;
+                margin: 10px 15px;
+                float: left;
+            }
 
 
         </style>
     </head>
     <body>
         <div class="rectangle">
-            Hello Table
+            <div>
+                <p class="TablesQueue"> Table 1 </p>
+                <p class="TablesBusy"> Table 2 </p>
+                <p class="TablesInUse"> Table 3 </p>
+                <p class="TablesReady"> Table 4 </p>
+                <p class="TablesInUse"> Table 5 </p>
+                <p class="TablesReady"> Table 6 </p>
+                <p class="TablesReady"> Table 7 </p>
+                <p class="TablesInUse"> Table 8 </p>
+                <p class="TablesQueue"> Table 9 </p>
+                <p class="TablesReady"> Table 10 </p>
+                <p class="TablesInUse"> Table 11 </p>                
+                <p class="TablesInUse"> Table 12 </p>
+                <p class="TablesInUse"> Table 13 </p>
+                <p class="TablesReady"> Table 14 </p>
+                <p class="TablesInUse"> Table 15 </p>
+                <p class="TablesBusy"> Table 16 </p>
+                <p class="TablesInUse"> Table 17 </p>
+                <p class="TablesInUse"> Table 18 </p>
+                <p class="TablesInUse"> Table 19 </p>
+                <p class="TablesInUse"> Table 20 </p>
+            </div>
         </div>
         <div class="hamburgerButton">
             <img src="pics/hambutton.png" alt="Hamburger Button" width="60" height="35">

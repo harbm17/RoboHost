@@ -34,9 +34,10 @@ h1{
     /* Check In Button*/
     display: block;
     max-width: 300px;
-    margin: auto;
+    margin-top: 50px;
+    margin-left:580px;
     width: 492px;
-    height: 120px;
+    height: 110px;
     background: #9DE0AD;
     font-size: 45px;
 
@@ -72,7 +73,7 @@ h1{
     position: absolute;
     width: 800px;
     height: 981px;
-    left: 795px;
+    left: 815px;
     top: 116px;
     background: rgba(229, 252, 194, 0.18);
     border-color: white;
@@ -82,9 +83,9 @@ h1{
 
 .roboImg{
     position: absolute;
-    width: 620px;
+    width: 650px;
     height: 699px;
-    left: 730px;
+    left: 780px;
     top: 100px;
 }
 .inst{
@@ -101,8 +102,17 @@ h1{
     font-weight: 500;
     font-size: 38px;
 }
-
-
+.circle3{
+    /* Middle left Circle */
+    position: absolute;
+    width: 264px;
+    height: 264px;
+    left: 298px;
+    top: 408px;
+    background: rgba(229, 252, 194, 0.25);
+    border-radius: 50%;
+    border-width: 5px;
+}
 
 /* Ellipse 18 *
 
