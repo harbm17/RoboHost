@@ -1,0 +1,73 @@
+/* Customer Confirmation */
+body{
+    position: static;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+
+    background: #45ADA8;
+    overflow: hidden;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+.confirmation{
+    /* You’ve been added to the waitlist! */
+    position: absolute;
+    width: 700px;
+    height: 160px;
+    left: 300px;
+    top: 0px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 94px;
+
+    color: rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: .5px white;
+}
+
+.notify{
+    /* We’ll notify you when your table is ready. */
+    position: absolute;
+    width: 770px;
+    height: 61px;
+    left: 350px;
+    top: 125px;
+
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 56px;
+
+    color: #FFFFFF;
+}
+
+img{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 800px;
+    top: 75px;
+}
+
+.bottomLeftCircle{
+    /* Lower Right Corner */
+    position: absolute;
+    width: 414px;
+    height: 414px;
+    left: 0px;
+    top: 400px;
+    border-radius: 50%;
+
+    background: rgba(229, 252, 194, 0.3);
+}
