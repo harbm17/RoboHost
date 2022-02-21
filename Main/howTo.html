@@ -1,211 +1,35 @@
 <!--how to use application-->
-
-<!DOCTYPE html>
-
+<!DOCTYPE HTML>
+<!--how to use web page  part of the RoboHost application-->
 <html>
-    <head>
-        <title>
-            Employee View
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <style>
-
-
-            body
-            {
-                background-color: #45ADA8;
-                position: relative;
-            }
-
-            .rectangle{
-                position:absolute;
-                width: 1200px;
-                height: 600px;
-                left: 120px;
-                top: 110px;
-
-                background: #DDDDDD;
-                border: 1.5px solid #000000;
-                box-sizing: border-box;
-            }
-
-            .hamburgerButton
-            {
-                color: black;
-                border: 2px;
-                border-color: grey;
-                position: absolute;
-                width: 130px;
-                height: 30px;
-                padding: 25px;
-                cursor: pointer;
-                z-index: 1;
-            }
-
-            .YourTables{
-            box-shadow: 0px 4px 8px 7px rgba(32, 0, 225, 0.55);
-            border-radius: 25px;
-            }
-
-            .TablesQueue
-            {
-                width: 176px;
-                height: 94px;
-                padding: 35px;
-                background: #5FAAF0;
-                border: 1px solid #000000;
-                box-sizing: border-box;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 25px;
-                text-align: center;
-                margin: 10px 15px;
-                float: left;
-            }
-
-            .TablesBusy
-            {
-                width: 176px;
-                height: 94px;
-                padding: 35px;
-                background: #F16464;
-                border: 1px solid #000000;
-                box-sizing: border-box;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 25px;
-                text-align: center;
-                margin: 10px 15px;
-                float: left;
-                cursor: pointer;
-                
-
-            }
-            .TablesInUse
-            {
-                width: 176px;
-                height: 94px;
-                padding: 35px;
-                background: #C4C4C4;
-                border: 1px solid #000000;
-                box-sizing: border-box;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 25px;
-                text-align: center;
-                margin: 10px 15px;
-                float: left;
-            }
-
-            .TablesReady
-            {
-                width: 176px;
-                height: 94px;
-                padding: 35px;
-                background: #9FE15C;
-                border: 1px solid #000000;
-                box-sizing: border-box;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 25px;
-                text-align: center;
-                margin: 10px 15px;
-                float: left;
-                cursor: pointer;
-            }
-
-            .MenuLayer
-            {
-            background-color: rgba(196, 196, 196, 0.801);
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            overflow-x: hidden;
-            transition: 0.60s;
-            }
-
-            .MenuLayerLinks
-            {
-                position: relative;
-                top: 25%;
-                padding: 35px;
-                width: 100%;
-                text-align: center;
-            }
-
-            .MenuLayer a
-            {
-            padding: 18px;
-            text-decoration: none;
-            font-size: 36px;
-            color: #000000;
-            display: block;
-            transition: 0.3s;
-            }
-
-            .MenuLayer a:hover, .MenuLayer a:focus
-            {
-                color: #f1f1f1;
-            }
-
-
-        </style>
-    </head>
-    <body>
-        <div id="myMenu" class="MenuLayer">
-            <a href="javascript:void(0)" class="closeMenuButton" onclick="toggleNav()"></a>
-            <div class="MenuLayerLinks">
-                <a href="file:///Users/adamjuwaied/Research/RoboHost/robohost/Main/howTo.html">How To Use</a>
-                <a href="#">Your Tables</a>
-                <a href="#">Logout</a>
-                <a > Employee: </a>
-            </div>
-            <script>
-
-            function toggleNav() {
-                var element = document.getElementById("myMenu");
-                if (element.style.width == "250px") {
-                    element.style.width = "0px";
-                } else {
-                    element.style.width = "250px";
-                }
-            }
-            </script>
-        </div>
-        <h1>YOUR TABLES</h1>
-        <div class="rectangle">
-            <div>
-                <p class="TablesQueue"> Table 1 </p>
-                <p class="TablesBusy"> Table 2 </p>
-                <p class="TablesInUse"> Table 3 </p>
-                <p class="TablesReady"> Table 4 </p>
-                <p class="TablesInUse"> Table 5 </p>
-                <p class="TablesReady"> Table 6 </p>
-                <p class="TablesReady"> Table 7 </p>
-                <p class="TablesInUse"> Table 8 </p>
-                <p class="TablesQueue"> Table 9 </p>
-                <p class="TablesReady" id="YourTables"> Table 10 </p>
-                <p class="TablesInUse"> Table 11 </p>
-                <p class="TablesInUse"> Table 12 </p>
-                <p class="TablesInUse"> Table 13 </p>
-                <p class="TablesReady"> Table 14 </p>
-                <p class="TablesInUse"> Table 15 </p>
-                <p class="TablesBusy"> Table 16 </p>
-                <p class="TablesInUse"> Table 17 </p>
-                <p class="TablesInUse"> Table 18 </p>
-                <p class="TablesInUse"> Table 19 </p>
-                <p class="TablesInUse"> Table 20 </p>
-            </div>
-        </div>
-
-        <div class="hamburgerButton">
-            <img src="pics/hambutton.png" alt="Hamburger Button" width="60" height="35" onclick="toggleNav()">
-        </div>
-    </body>
-
-
+	<head>
+		<title>How to Use - RoboHost</title>
+		
+		<!--How to page uses the how to stylesheet-->
+		<link rel="stylesheet" href="howTo.css">
+	</head>
+	<body>
+		<!--The display title of the site-->
+		<h1>HOW TO USE</h1>
+		
+		<!--The Gray rectangle that holds all the the information. Everything that we want in the rectangle needs to be inside this div-->
+		<div class="rectangle">
+			
+			<!--These are the colored blocks-->
+			<div class="redTable">Needs to be cleaned</div>
+			<div class="greenTable">Available</div>
+			<div class="blueTable">Waiting for customer</div>
+			<div class="greyTable">In Use</div>
+			
+			
+			<!--This block of information that holds what is actually done. The span area changes just the stlye of the phrases between them.-->
+			<div class="Info_Block">
+				<p>
+					There are 4 colors that each represent the current status of the tables in the resturaunt. When you want to change the status of a table, simply tap!<br>
+					For example: If you want to signal a Buser to let them know that a table needs to be cleaned <span style="color: #9D9C9C">(Current status should be In Use)</span>, simply tap on the table to Red <span style="color: #F16464">(Needs to be cleaned)</span>.<br>
+					If the table is <span style="color: #5FAAF0">Blue</span>, this indicates that the table is currently waiting for the next customer to arrive to their table. If they do not arrive within 5 minutes, the status should be changed to <span style="color: #9FE15C">Available</span>, and it cna be switched to <span style="color: #5FAAF0">Blue</span> again when the next customer has been moved up the waiting list.
+				</p>
+			</div>
+		</div>
+	</body>
 </html>
-
