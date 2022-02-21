@@ -1,10 +1,11 @@
 <!--employee views layout here-->
+
 <!DOCTYPE html>
 
 <html>
     <head>
         <title>
-            Your Tables View
+            Employee View
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
@@ -13,14 +14,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <style>
 
-            .heading
-            {
-                text-align: justify;
-                font-size: 60px;
-                position: fixed;
-                top: 20px;
-                left: 500px;
-            }
 
             body
             {
@@ -33,7 +26,7 @@
                 width: 1200px;
                 height: 600px;
                 left: 120px;
-                top: 175px;
+                top: 110px;
 
                 background: #DDDDDD;
                 border: 1.5px solid #000000;
@@ -53,6 +46,10 @@
                 z-index: 1;
             }
 
+            .YourTables{
+            box-shadow: 0px 4px 8px 7px rgba(32, 0, 225, 0.55);
+            border-radius: 25px;
+            }
 
             .TablesQueue
             {
@@ -117,23 +114,17 @@
                 cursor: pointer;
             }
 
-            .YourTables
-            {
-                box-shadow: 0px 4px 8px 7px rgba(32, 0, 225, 0.55);
-                border-radius: 25px;
-            }
-
             .MenuLayer
             {
-                background-color: rgba(196, 196, 196, 0.801);
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                left: 0;
-                overflow-x: hidden;
-                transition: 0.60s;
+            background-color: rgba(196, 196, 196, 0.801);
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            overflow-x: hidden;
+            transition: 0.60s;
             }
 
             .MenuLayerLinks
@@ -147,12 +138,12 @@
 
             .MenuLayer a
             {
-                padding: 18px;
-                text-decoration: none;
-                font-size: 36px;
-                color: #000000;
-                display: block;
-                transition: 0.3s;
+            padding: 18px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #000000;
+            display: block;
+            transition: 0.3s;
             }
 
             .MenuLayer a:hover, .MenuLayer a:focus
@@ -172,7 +163,6 @@
                 <a href="#">Logout</a>
                 <a > Employee: </a>
             </div>
-
             <script>
 
             function toggleNav() {
@@ -185,9 +175,7 @@
             }
             </script>
         </div>
-        <div>
-            <h1 class="heading">YOUR TABLES</h1>
-        </div>
+        <h1>YOUR TABLES</h1>
         <div class="rectangle">
             <div>
                 <p class="TablesQueue"> Table 1 </p>
@@ -197,9 +185,9 @@
                 <p class="TablesInUse"> Table 5 </p>
                 <p class="TablesReady"> Table 6 </p>
                 <p class="TablesReady"> Table 7 </p>
-                <p class="TablesInUse">Table 8 </p>
+                <p class="TablesInUse"> Table 8 </p>
                 <p class="TablesQueue"> Table 9 </p>
-                <p class="TablesReady"> Table 10 </p>
+                <p class="TablesReady" id="YourTables"> Table 10 </p>
                 <p class="TablesInUse"> Table 11 </p>
                 <p class="TablesInUse"> Table 12 </p>
                 <p class="TablesInUse"> Table 13 </p>
@@ -212,6 +200,7 @@
                 <p class="TablesInUse"> Table 20 </p>
             </div>
         </div>
+
         <div class="hamburgerButton">
             <img src="pics/hambutton.png" alt="Hamburger Button" width="60" height="35" onclick="toggleNav()">
         </div>
@@ -219,3 +208,4 @@
 
 
 </html>
+
